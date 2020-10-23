@@ -42,6 +42,7 @@ public class StandaloneSessionClusterEntrypoint extends SessionClusterEntrypoint
 
 	public static void main(String[] args) {
 		// startup checks and logging
+		LOG.info("开始启动");
 		EnvironmentInformation.logEnvironmentInfo(LOG, StandaloneSessionClusterEntrypoint.class.getSimpleName(), args);
 		SignalHandler.register(LOG);
 		JvmShutdownSafeguard.installAsShutdownHook(LOG);
