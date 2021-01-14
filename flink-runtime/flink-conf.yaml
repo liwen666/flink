@@ -30,7 +30,10 @@
 # automatically configure the host name based on the hostname of the node where the
 # JobManager runs.
 
-jobmanager.rpc.address: localhost
+#jobmanager.rpc.address: 11.11.1.79
+#jobmanager.rpc.address: 192.168.60.100
+jobmanager.rpc.address: 192.168.60.100
+#jobmanager.rpc.address: localhost
 
 # The RPC port where the JobManager is reachable.
 
@@ -263,3 +266,6 @@ jobmanager.execution.failover-strategy: region
 
 jobmanager.web.tmpdir: D:\\flink-learning\\flink\\flink-runtime\\tmp\\runjob
 jobmanager.web.upload.dir: D:\\flink-learning\\flink\\flink-runtime\\tmp\\runjob
+
+#配置加载滴自定义依赖赖
+classloader.resolve-order: parent-first

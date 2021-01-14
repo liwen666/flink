@@ -1269,7 +1269,7 @@ public class BatchTask<S extends Function, OT> extends AbstractInvokable impleme
 
 	/**
 	 * Creates a writer for each output. Creates an OutputCollector which forwards its input to all writers.
-	 * The output collector applies the configured shipping strategy.
+	 * The output collector applies the configured shippi'ng strategy.
 	 */
 	@SuppressWarnings("unchecked")
 	public static <T> Collector<T> initOutputs(AbstractInvokable containingTask, ClassLoader cl, TaskConfig config,

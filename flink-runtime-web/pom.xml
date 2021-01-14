@@ -99,6 +99,20 @@ under the License.
 			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.flink</groupId>-->
+			<!--<artifactId>flink-connector-kafka_${scala.binary.version}</artifactId>-->
+			<!--<version>1.11-SNAPSHOT</version>-->
+		<!--</dependency>-->
+
+
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-table-common</artifactId>
+			<version>1.11-SNAPSHOT</version>
+		</dependency>
+
+
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
@@ -110,6 +124,12 @@ under the License.
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>2.6.0</version>
+			<scope>compile</scope>
 		</dependency>
 
 	</dependencies>
